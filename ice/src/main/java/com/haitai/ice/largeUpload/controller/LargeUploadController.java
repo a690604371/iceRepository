@@ -40,6 +40,7 @@ public class LargeUploadController {
                     int pageNum,
             @RequestParam(name = "pageSize", required = false, defaultValue = "10")
                     int pageSize){
+        System.out.println("jinlaileya");
         return largeUploadService.findAllUser(pageNum,pageSize);
     }
 

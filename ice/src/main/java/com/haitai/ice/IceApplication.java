@@ -5,9 +5,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.MultipartConfigFactory;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 
 import javax.servlet.MultipartConfigElement;
 
+//@ComponentScan
 @MapperScan("com.haitai.ice.**.dao")
 @SpringBootApplication
 public class IceApplication {

@@ -68,8 +68,8 @@ public class LargeUploadServiceImpl implements LargeUploadService {
         String uuid = request.getParameter("filemd5");
         String fileName = request.getParameter("name");
         String size = request.getParameter("size");//总大小
-        int total = Integer.valueOf(request.getParameter("total"));//总片数
-        int index = Integer.valueOf(request.getParameter("index"));//当前是第几片
+        long total = Integer.valueOf(request.getParameter("total"));//总片数
+        long index = Integer.valueOf(request.getParameter("index"));//当前是第几片
         String fileMd5 = request.getParameter("filemd5"); //整个文件的md5
         String date = request.getParameter("date"); //文件第一个分片上传的日期(如:20170122)
         String md5 = request.getParameter("md5"); //分片的md5
